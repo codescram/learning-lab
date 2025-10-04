@@ -49,6 +49,7 @@ function createPortfolio(data){
         const anchor = document.createElement('a')
         anchor.textContent=element.name;
         anchor.href = element.url;
+        anchor.target = "_blank"
         link.appendChild(anchor)
         link.classList.add('link');
         linkContainer.appendChild(link);
